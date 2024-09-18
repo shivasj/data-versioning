@@ -1,4 +1,0 @@
-[core]
-    remote = cheese_dataset
-['remote "cheese_dataset"']
-    url = gs://data-versioning-test/dvc_store

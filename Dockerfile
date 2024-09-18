@@ -39,7 +39,7 @@ RUN set -ex; \
     mkdir -p /app && \
     chown app:app /app
 
-RUN mkdir -p /mnt/gcs_data && chown app:app /mnt/gcs_data
+RUN mkdir -p /app/gcs_data && chown app:app /app/gcs_data
 
 
 # Switch to the new user
