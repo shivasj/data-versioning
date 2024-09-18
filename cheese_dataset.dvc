@@ -1,9 +1,9 @@
-md5: 27518505d9fe9828dbe7406b1e776f65
+md5: 286b74202c0d2fc9e865ed17ece7e745
 frozen: true
 deps:
-- md5: 55f4cbf8a7fb9cd1dda9258c1f821d13.dir
-  size: 467245
-  nfiles: 3
+- md5: 67dcdfc54c26dc42e2f945edf1461806.dir
+  size: 712574
+  nfiles: 5
   hash: md5
   path: gs://data-versioning-test/images
 outs:
