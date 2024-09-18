@@ -1,0 +1,11 @@
+md5: 27518505d9fe9828dbe7406b1e776f65
+frozen: true
+deps:
+- md5: 55f4cbf8a7fb9cd1dda9258c1f821d13.dir
+  size: 467245
+  nfiles: 3
+  hash: md5
+  path: gs://data-versioning-test/images
+outs:
+- hash: md5
+  path: cheese_dataset
