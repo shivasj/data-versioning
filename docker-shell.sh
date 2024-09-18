@@ -30,7 +30,9 @@ docker run --rm --name data-version-cli -ti \
 --network data-versioning-network data-version-cli \
 bash -c "
 gcloud auth activate-service-account --key-file=/secrets/data-service-account.json
-mkdir -p /app/gcs_bucket
-gcsfuse --key-file=/secrets/data-service-account.json $GCS_BUCKET_NAME /app/gcs_data
-echo 'GCS bucket mounted at /app/gcs_data'
+mkdir -p /mnt/gcs_bucket
+gcsfuse --key-file=/secrets/data-service-account.json $GCS_BUCKET_NAME /mnt/gcs_data
+echo 'GCS bucket mounted at /mnt/gcs_data'
+mkdir -p /app/cheese_data
+mount --bind /mnt/gcs_data/images /app/cheese_data
 "
